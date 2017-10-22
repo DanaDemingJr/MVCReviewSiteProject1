@@ -14,7 +14,7 @@ namespace MVCReviewSiteProject.Models
         public string ReviewerName { get; set; }
         [Display(Name = "Gadget Reviewed")]
         public string GadgetReviewed { get; set; }
-        [Display(Name = "Date Reviewed")]
+        [Display(Name = "Today's Date")]
         [DisplayFormat(DataFormatString = "{0:mm/dd/yyyy}")]
         public DateTime DateReviewed { get; set; }
         public string Review { get; set; }

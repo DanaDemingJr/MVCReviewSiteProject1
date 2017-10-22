@@ -5,27 +5,27 @@
 <div class="jumbotron">
     <h1>Dana's Tech Review Site</h1>
     <p class="lead">Collecting reviews for the most current products from users for the users!</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Explore Reviews &raquo;</a></p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>About Us</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            We are an award winning site that features reviews on the latest technology 
+            products.  Everything from Phones to TV's to Watches.  The best part you ask?
+            These reviews are from you!  We don't hire people to place paid reviews, we
+            ask the users to give the input so you know it's factual!
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        @Html.ActionLink("See Reviews", "Index", "Reviews")
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Write a Review!</h2>
+        <p>Start your own review of any new technology.  Smart phones, TV's, watches, drones and anything else that catches your attention.</p>
+        @Html.ActionLink("Write your review", "Create", "Reviews")
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>Categories</h2>
+        <p>Have a piece of technology that hasn't been reviewed yet?  No problem!  Create your own category to start a review!</p>
+        @Html.ActionLink("Create Category", "Create", "Categories")
     </div>
 </div>
